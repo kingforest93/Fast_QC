@@ -1,4 +1,11 @@
-# hello-world
+Hello, Git!
+
+I am a new hand in coding and at the begining of working on bioinformatics. Thanks to Git, I can access so much information and material and stay in touch with so many resources and masters. I will try my best to learn and work!
+
+The following is my first script written in Perl, which can be used to check the qualities of raw reads (fastq files) from Illumina sequencing platforms (1.8+).
+
+I'll be very happy if this program can give you any help.
+Thanks for your interest and comments and suggestions are really appreciated!
 
 Fast_QC_2.pl
 
@@ -11,7 +18,7 @@ perl ./Fast_QC_2.perl -i 1.fastq 2.fastq ... [-o dir] [-h] [-v]
 
 Makesure fastqc.perl and fastq files to check in the same director place, but this is not a must if you make fastqc.perl executable in the Bash $PATH, and 'perl' can be omitted in that case.
 
-If you find any bug, please contact me:
+If you encounter any bug when using this program, please contact me:
 SenWang
 E-mail: wangsen1993@163.com
 
