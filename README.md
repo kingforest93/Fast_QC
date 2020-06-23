@@ -1,24 +1,18 @@
 # Hello, Git!
 
-I am a new hand in coding and at the begining of working on bioinformatics. Thanks to Git, I can access so much information and material and stay in touch with so many resources and masters. I will try my best to learn and work!
-
-The following is my first script written in Perl, which can be used to check the qualities of raw reads (fastq files) from Illumina sequencing platforms (1.8+).
-
-I'll be very happy if this program can give you any help.
-Thanks for your interest and comments and suggestions are really appreciated!
+This is my first script written in perl, which can be used to check the qualities of raw reads (fastq files) from Illumina sequencing platforms (1.8+).
 
 `Fastq_QC_v2.pl`
 
-This program read original fastq files from Illumina platforms and produce the quality reports in a new user-defined file.
-It includes number of total reads, frequency of read length and duplications, distribution of A/T/C/G/N and Q-scores in each base position.
+This program read original fastq files from Illumina sequencing platforms and produce the quality statistics in a new file. The output includes `number of total reads`, `frequency of read length and duplications`, `distribution of A/T/C/G/N` and `Q-scores in each base position`.
 
-Compared to Fast_QC_1.pl, this version can handle multiple fastq files simultaneously.
+Compared to `Fast_QC_v1.pl`, this version can handle multiple fastq (also gzip compressed fastq.gz) files simultaneously.
 
-`perl ./Fastq_QC_v2.pl -i 1.fastq 2.fastq ... [-o dir] [-h] [-v]`
+`perl ./Fastq_QC_v2.pl -i read1.fq read2.fq.gz ... -o read.report [-h] [-v]`
 
-Makesure fastqc.perl and fastq files to check in the same director place, but this is not a must if you make fastqc.perl executable in the Bash $PATH, and 'perl' can be omitted in that case.
+The above command can only be run when `Fastq_QC_v2.pl` and the fastq or fastq.gz files to process are in the same directory. You can also run it directly if `Fastq_QC_v2.pl` is executable in $PATH, and `perl ./` can be omitted in that case.
 
-If you encounter any bug when using this program, please contact me:  
+If you encounter any bug when using this script, please contact me:  
 Sen Wang, wangsen1993@163.com.
 
 Updates:  
