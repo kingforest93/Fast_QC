@@ -12,7 +12,7 @@ Compared to fastqc.pl, this version can handle multiple fastq files simultaneous
 
 perl Fastq_QC_v2.pl -i 1.fq 2.fastq 3.fastq.gz 4.fq.gz ... [-o dir] [-h] [-v]
 
-Makesure fastqc.perl and fastq files to check in the same director place, but this is not a must if you make fastqc.perl executable in the Bash $PATH, and 'perl' can be omitted in that case.
+Makesure Fastq_QC_v2.pl and fastq files to check in the same director place, but this is not a must if you make Fastq_QC_v2.pl executable in the Bash $PATH, and 'perl' can be omitted in that case.
 
 =head1 Author
 
@@ -21,8 +21,7 @@ E-mail: wangsen1993@163.com
 
 =head1 Update
 
-Fastq_QC_v2.pl v2.1, 2018/12/11
-Fastq_QC_v2.pl v2.0, 2018/11/28
+Fastq_QC_v2.pl v2.2, 2019/08/20
 
 =cut
 

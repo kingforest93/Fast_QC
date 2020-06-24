@@ -11,7 +11,7 @@ It includes number of total reads, frequency of read length and duplications, di
 
 perl Fastq_QC_v1.pl -i *.fastq[.gz] -o *.qc [-h] [-v]
 
-Makesure fastqc.perl and fastq files to check in the same director place, but this is not a must if you make fastqc.perl executable in the Bash $PATH, and 'perl' can be omitted in that case.
+Makesure Fastq_QC_v1.pl and fastq files to check in the same director place, but this is not a must if you make Fastq_QC_v1.pl executable in the Bash $PATH, and 'perl' can be omitted in that case.
 
 =head1 Author
 
@@ -20,8 +20,7 @@ E-mail: wangsen1993@163.com
 
 =head1 Update
 
-Fastq_QC_v1.pl v 1.1, 2018/11/25
-Fastq_QC_v1.pl v 1.0, 2018/11/23
+Fastq_QC_v1.pl v 1.2, 2019/08/20
 
 =cut
 
