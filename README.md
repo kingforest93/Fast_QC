@@ -1,16 +1,18 @@
 ## perl scripts to process fastq or fasta files
 
-This is my first script written in perl, which can be used to check the qualities of raw reads (fastq files) from Illumina sequencing platforms (1.8+).
+`perl Fastq_QC_v1.pl -i *.fastq[.gz] -o *.qc [-h] [-v]`
 
-`Fastq_QC_v2.pl`
+This program read original fastq files from Illumina platforms and produce the quality reports in a new user-defined file. It includes number of total reads, frequency of read length and duplications, distribution of A/T/C/G/N and Q-scores in each base position.
 
-This program read original fastq files from Illumina sequencing platforms and produce the quality statistics in a new file. The output includes number of total reads, frequency of read length and duplications, distribution of A/T/C/G/N and Q-scores in each base position.
+`perl Fastq_QC_v2.pl -i 1.fq 2.fastq 3.fastq.gz 4.fq.gz ... [-o dir] [-h] [-v]`
 
-Compared to `Fast_QC_v1.pl`, this version can handle multiple fastq (also gzip compressed fastq.gz) files simultaneously.
+This program read original fastq files from Illumina platforms and produce the quality reports in a new user-defined file. It includes number of total reads, frequency of read length and duplications, distribution of A/T/C/G/N and Q-scores in each base position. Compared to fastqc.pl, this version can handle multiple fastq files simultaneously, and gzip compressed files are also supported.
 
-`perl ./Fastq_QC_v2.pl -i read1.fq read2.fq.gz ... -o read.report [-h] [-v]`
+` `
 
-The above command can only be run when `Fastq_QC_v2.pl` and the fastq or fastq.gz files to process are in the same directory. You can also run it directly if `Fastq_QC_v2.pl` is executable in $PATH, and perl ./ can be omitted in that case.
 
-If you encounter any bug when using this script, please contact me:  
+
+The above commands should be run with the fastq or fastq.gz files in the same directory, unless you make them executable in $PATH.
+
+Please contact me if you encounter any bug when using thess scripts:  
 Sen Wang, wangsen1993@163.com.
