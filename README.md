@@ -1,7 +1,9 @@
 ## perl scripts to process fastq or fasta files
 
 This is my first script written in perl, which can be used to check the qualities of raw reads (fastq files) from Illumina sequencing platforms (1.8+).
+
 `Fastq_QC_v2.pl`
+
 This program read original fastq files from Illumina sequencing platforms and produce the quality statistics in a new file. The output includes number of total reads, frequency of read length and duplications, distribution of A/T/C/G/N and Q-scores in each base position.
 
 Compared to `Fast_QC_v1.pl`, this version can handle multiple fastq (also gzip compressed fastq.gz) files simultaneously.
